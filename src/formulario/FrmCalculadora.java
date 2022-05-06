@@ -2,15 +2,11 @@ package formulario;
 
 import java.awt.Dimension;
 import java.awt.Rectangle;
-import java.awt.event.WindowEvent;
 import java.awt.event.WindowAdapter;
-
-import javax.swing.JButton;
+import java.awt.event.WindowEvent;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 /**
  * Classe que implementa a interface principal do sistema.
@@ -42,14 +38,14 @@ public class FrmCalculadora extends JFrame {
     private JPanel contentPane;
 
     /**
-     * Constructor for the FrmCalculadora object
+     * Construtor sem argumento.
      */
     public FrmCalculadora() {
         inicializar();
     }
 
     /**
-     * Description of the Method
+     * Inicializa os componentes da janela.
      */
     private void inicializar() {
         contentPane = (JPanel) this.getContentPane();
@@ -130,9 +126,9 @@ public class FrmCalculadora extends JFrame {
     }
 
     /**
-     * Description of the Method
+     * Processa os eventos da janela.
      *
-     * @param e Description of the Parameter
+     * @param e Eventos da janela.
      */
     protected void processWindowEvent(WindowEvent e) {
         super.processWindowEvent(e);
