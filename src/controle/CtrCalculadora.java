@@ -24,10 +24,10 @@ public class CtrCalculadora {
         setFrmCalculadora(new FrmCalculadora());
 
         // Associa os eventos aos componentes
-        getFrmCalculadora().jBtnSomar
+        getFrmCalculadora().jBtnAdicionar
                 .addActionListener(new java.awt.event.ActionListener() {
                     public void actionPerformed(ActionEvent e) {
-                        jBSomar_actionPerformed(e);
+                        jBAdicionar_actionPerformed(e);
                     }
                 });
 
@@ -75,7 +75,7 @@ public class CtrCalculadora {
         getFrmCalculadora().setVisible(true);
     }
 
-    void jBSomar_actionPerformed(ActionEvent e) {
+    void jBAdicionar_actionPerformed(ActionEvent e) {
         Calculadora calculadora = new Calculadora();
         calculadora.setNumero1(Double.parseDouble(getFrmCalculadora().jTFNumero1.getText()));
         calculadora.setNumero2(Double.parseDouble(getFrmCalculadora().jTFNumero2.getText()));
@@ -86,7 +86,7 @@ public class CtrCalculadora {
         Calculadora calculadora = new Calculadora();
         calculadora.setNumero1(Double.parseDouble(getFrmCalculadora().jTFNumero1.getText()));
         calculadora.setNumero2(Double.parseDouble(getFrmCalculadora().jTFNumero2.getText()));
-        getFrmCalculadora().jTFResultado.setText(Double.toString(calculadora.getSubtracao()));
+        getFrmCalculadora().jTFResultado.setText(Double.toString(calculadora.getDiferenca()));
     }
 
     void jBMultiplicar_actionPerformed(ActionEvent e) {
@@ -100,7 +100,7 @@ public class CtrCalculadora {
         Calculadora calculadora = new Calculadora();
         calculadora.setNumero1(Double.parseDouble(getFrmCalculadora().jTFNumero1.getText()));
         calculadora.setNumero2(Double.parseDouble(getFrmCalculadora().jTFNumero2.getText()));
-        getFrmCalculadora().jTFResultado.setText(Double.toString(calculadora.getDivisao()));
+        getFrmCalculadora().jTFResultado.setText(Double.toString(calculadora.getQuociente()));
     }
 
     void jBLimpar_actionPerformed(ActionEvent e) {

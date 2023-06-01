@@ -77,10 +77,10 @@ public class Calculadora {
     }
 
     /**
-     * Retorna a subtracao do primeiro numero menos o segundo numero da
+     * Retorna a diferença do primeiro numero menos o segundo numero da
      * calculadora.
      */
-    public double getSubtracao() {
+    public double getDiferenca() {
         return (getNumero1() - getNumero2());
     }
 
@@ -92,9 +92,9 @@ public class Calculadora {
     }
 
     /**
-     * Retorna o divisao do primeiro pelo segundo numero da calculadora.
+     * Retorna o quociente do primeiro pelo segundo numero da calculadora.
      */
-    public double getDivisao() {
+    public double getQuociente() {
         return (getNumero1() / getNumero2());
     }
 

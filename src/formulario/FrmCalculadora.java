@@ -27,7 +27,7 @@ public class FrmCalculadora extends JFrame {
     private javax.swing.JLabel jLBResultado;
     public javax.swing.JTextField jTFResultado;
 
-    public javax.swing.JButton jBtnSomar;
+    public javax.swing.JButton jBtnAdicionar;
     public javax.swing.JButton jBtnSubtrair;
     public javax.swing.JButton jBtnDividir;
     public javax.swing.JButton jBtnMultiplicar;
@@ -50,7 +50,7 @@ public class FrmCalculadora extends JFrame {
     private void inicializar() {
         contentPane = (JPanel) this.getContentPane();
 
-        jBtnSomar = new javax.swing.JButton();
+        jBtnAdicionar = new javax.swing.JButton();
         jBtnSubtrair = new javax.swing.JButton();
         jBtnMultiplicar = new javax.swing.JButton();
         jBtnDividir = new javax.swing.JButton();
@@ -87,8 +87,8 @@ public class FrmCalculadora extends JFrame {
         jTFResultado.setBounds(new Rectangle(11, 124, 150, 21));
         jLBResultado.setText("Resultado");
 
-        jBtnSomar.setBounds(new Rectangle(200, 9, 110, 27));
-        jBtnSomar.setText("Somar");
+        jBtnAdicionar.setBounds(new Rectangle(200, 9, 110, 27));
+        jBtnAdicionar.setText("Adicionar");
 
         jBtnSubtrair.setBounds(new Rectangle(200, 39, 110, 27));
         jBtnSubtrair.setText("Subtrair");
@@ -112,7 +112,7 @@ public class FrmCalculadora extends JFrame {
         contentPane.add(jLBResultado, null);
         contentPane.add(jTFResultado, null);
 
-        contentPane.add(jBtnSomar, null);
+        contentPane.add(jBtnAdicionar, null);
         contentPane.add(jBtnSubtrair, null);
         contentPane.add(jBtnMultiplicar, null);
         contentPane.add(jBtnDividir, null);
