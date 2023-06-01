@@ -20,6 +20,5 @@ public class Principal {
 
         CtrCalculadora controle = new CtrCalculadora();
         controle.executar();
-
     }
 }
